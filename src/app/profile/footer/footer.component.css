@@ -1,0 +1,16 @@
+.footer1{
+    text-align: center; 
+    min-height:1.5rem; 
+    padding:5px;
+    background-color:var(--primary-color); 
+    color:var(--accent-color);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.114); */
+    z-index: 999;
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #121212 ;
+}
+
+:host ::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #121212;
+}

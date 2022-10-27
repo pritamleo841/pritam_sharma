@@ -1,0 +1,13 @@
+.footer1{
+    text-align: center; 
+    min-height:1.5rem; 
+    padding:5px;
+    background-color:var(--primary-color); 
+    color:var(--accent-color);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.114); */
+    z-index: 999;
+}
+/* active tab */
+/* ::ng-deep .mat-tab-label .mat-tab-label-content{
+    font-family: "Orbitron", sans-serif;
+} */

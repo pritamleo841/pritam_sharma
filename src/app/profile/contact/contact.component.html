@@ -1,0 +1,114 @@
+<section class="width100">
+  <mat-card class="height-1" fxLayoutGap="1rem" fxLayout="column" fxLayoutAlign="start start">
+    <div class="margin-1"></div>
+    <mat-card-title>
+      <span class="title-special">
+        {{title}}
+      </span>
+    </mat-card-title>
+    <div class="margin-2"></div>
+    <mat-card-content class="width100">
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+
+        <div fxLayout="column" fxLayoutGap="1rem" fxLayoutAlign="center center">
+          <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="0.5rem">
+            <div fxLayout="column wrap" fxLayoutAlign="start center">
+              <img class="image" src="assets/profilePicture1.png" height="130" width="100">
+              <p class="text">Pritam Sharma</p>
+            </div>
+
+            <div fxLayout="row wrap" fxLayoutAlign="start center">
+              <span class="bolder">Present : </span>
+              <span>{{this.contacts.address.currentAddress}},</span>
+              <span>Kolkata - {{this.contacts.address.currentAddressZip}},</span>
+              <span>{{this.contacts.address.currentAddressDistrict}}.</span>
+            </div>
+
+            <div fxLayout="row wrap" fxLayoutAlign="start center">
+              <span class="bolder">Permanent : </span>
+              <span>{{this.contacts.address.permanentAddress}},</span>
+              <span>Kolkata - {{this.contacts.address.permanentAddressZip}},</span>
+              <span>{{this.contacts.address.permanentAddressDistrict}}.</span>
+            </div>
+
+            <div class="bolder" fxLayout="row wrap" fxLayoutAlign="start center">
+              <span>{{this.contacts.address.state}},</span>
+              <span>{{this.contacts.address.country}}</span>
+            </div>
+            <div class="margin-2 margin-1"></div>
+
+            <div fxLayout="row wrap" fxLayoutAlign="start center">
+              <mat-icon>smartphone</mat-icon>
+              <a href="tel:+918274825938" target="_blank"
+                title="Primary Phone Number">{{this.contacts.contact.primaryPhoneNo}}</a>
+              <span>&nbsp;/&nbsp;</span>
+              <a href="tel:+917003896166" target="_blank"
+                title="Alternative Phone Number">{{this.contacts.contact.secondaryPhoneNo}}</a>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="5px">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon>email</mat-icon>
+                <a href="mailto:sharmapritam841@gmail.com" target="_blank"
+                  title="Primary Email">{{this.contacts.contact.primaryEmailId}}</a>
+              </div>
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon>alternate_email</mat-icon>
+                <a href="mailto:pritamleo48@gmail.com" target="_blank"
+                  title="Alternative Email">{{this.contacts.contact.secondaryEmailId}}</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center center">
+          
+          <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.5rem">
+            <button class="cv" mat-icon-button matTooltip="Download My Resume">
+              <a title="Download My Resume" class="link" target="_blank"
+                href="https://drive.google.com/file/d/1-2DDYoQoMII_sRnILlcL0QOlB8h9h9KL/view?pli=1">
+                <mat-icon>cloud_download</mat-icon>
+              </a>
+            </button>
+          </div>
+
+          <div fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="0.5rem">
+            <a href="{{this.contacts.contact.leetcodeURL}}" target="_blank" rel="tooltip" title="Follow me on Leetcode">
+              <i class="fa fa-code"><span style="font-size: 1rem;">leetcode</span></i>
+            </a>
+            <a href="{{this.contacts.contact.hackerrankURL}}" target="_blank" rel="tooltip"
+              title="Follow me on Hackerrank">
+              <i class="fa fa-code"><span style="font-size: 1rem;">hackerrank</span></i>
+            </a>
+          </div>
+
+          <div fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="0.5rem">
+            <a href="{{this.contacts.contact.facebookURL}}" target="_blank" rel="tooltip" title="Follow me on Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="{{this.contacts.contact.linkedinURL}}" target="_blank" rel="tooltip" title="Follow me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="{{this.contacts.contact.instagramURL}}" target="_blank" rel="tooltip"
+              title="Follow me on Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="{{this.contacts.contact.githubURL}}" target="_blank" rel="tooltip" title="Follow me on Github">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        
+        </div>
+
+      </div>
+
+    </mat-card-content>
+
+
+
+  </mat-card>
+  <!-- <app-footer class="footer"></app-footer> -->
+
+</section>

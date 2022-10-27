@@ -1,0 +1,61 @@
+<section class="width100">
+    <mat-card class="height-1" fxLayoutGap="1rem" fxLayout="column" fxLayoutAlign="start start">
+        <div class="margin-1"></div>
+        <mat-card-title>
+            <span class="title-special">
+                {{title}}
+            </span>
+        </mat-card-title>
+        <div class="margin-2"></div>
+        <mat-card-content class="width100">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <p class="font-s">Languages </p>
+                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="3rem" class="width100" *ngFor="let item of this.skills.languages" >
+                    <div fxFlex="10">
+                        <span class="bolder">{{item.name}}</span>
+                    </div>
+                    <div fxFlex>
+                        <mat-progress-bar mode="determinate" value="{{item.score}}"></mat-progress-bar>
+                    </div>
+                    <div fxFlex="10">
+                        <span class="bolder">{{item.score}}%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-2"></div>
+
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <p class="font-s">Frameworks </p>
+                <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="3rem" class="width100" *ngFor="let item of this.skills.frameworks">
+                    <div fxFlex="10">
+                        <span class="bolder">{{item.name}}</span>
+                    </div>
+                    <div fxFlex>
+                        <mat-progress-bar mode="determinate" value="{{item.score}}"></mat-progress-bar>
+                    </div>
+                    <div fxFlex="10">
+                        <span class="bolder">{{item.score}}%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-2"></div>
+
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <p class="font-s">Tools </p>
+                <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="3rem" class="width100" *ngFor="let item of this.skills.tools">
+                    <div fxFlex="10">
+                        <span class="bolder">{{item.name}}</span>
+                    </div>
+                    <div fxFlex>
+                        <mat-progress-bar mode="determinate" value="{{item.score}}"></mat-progress-bar>
+                    </div>
+                    <div fxFlex="10">
+                        <span class="bolder">{{item.score}}%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-2"></div>
+
+        </mat-card-content>
+    </mat-card>
+</section>

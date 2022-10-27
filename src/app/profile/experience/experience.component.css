@@ -1,0 +1,10 @@
+.panel-header{
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

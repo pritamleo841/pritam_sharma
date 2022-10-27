@@ -1,0 +1,42 @@
+<section class="width100">
+    <mat-card class="height-1" fxLayoutGap="1rem" fxLayout="column" fxLayoutAlign="start start">
+        <div class="margin-1"></div>
+        <mat-card-title>
+            <span class="title-special">
+                {{title}}
+            </span>
+        </mat-card-title>
+        <div class="margin-2"></div>
+        <mat-card-content class="width100" *ngFor="let item of this.experience">
+            <mat-accordion>
+                <mat-expansion-panel expanded="true" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="panel-header">
+                        <mat-panel-title class="bolder white-1">
+                            <a class="link bolder white-1" href="{{item.link}}" target="_blank" title="Visit to Know More">{{item.name}}</a>
+                        </mat-panel-title>
+                        <mat-panel-description class="bolder white-1">
+                            {{item.location}}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="margin-2 margin-1"></div>
+
+                    <p><span class="bolder">({{ this.months[item.startDate.month]}},{{item.startDate.year}} -
+                        <span *ngIf="item.endDate=='NA'">Present)</span> 
+                        <span *ngIf="item.endDate!='NA'">{{this.months[item.endDate.month]}},{{item.endDate.year}})</span>
+                        </span>
+                    </p>
+                    <p><span class="bolder">Designation : </span>{{item.position}}</p>
+                    <p><span class="bolder">Skills : </span>{{item.skills}}</p>
+                    <div>
+                        <span class="bolder">Roles & Responsibilities : </span>
+                        <ul *ngFor="let itr of item.roles">
+                            <li><span>{{itr}}</span></li>
+                        </ul> 
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </mat-card-content>
+    </mat-card>
+    <!-- <app-footer class="footer"></app-footer> -->
+
+</section>

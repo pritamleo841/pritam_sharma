@@ -1,0 +1,61 @@
+<section class="width100">
+    <mat-card class="height-1" fxLayoutGap="1rem" fxLayout="column" fxLayoutAlign="start start">
+        <div class="margin-1"></div>
+        <mat-card-title>
+            <span class="title-special">
+                {{title}}
+            </span>
+        </mat-card-title>
+        <div class="margin-2"></div>
+        <mat-card-content class="width100">
+            <mat-table matSort [dataSource]="dataSource">
+                <!-- Year Column -->
+                <ng-container matColumnDef="year">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef class="col-header">
+                        Year
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">{{element.year}}</mat-cell>
+                </ng-container>
+    
+                <!-- Examination Column -->
+                <ng-container matColumnDef="examination">
+                    <mat-header-cell *matHeaderCellDef class="col-header">
+                        Examination
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">{{element.examination}}</mat-cell>
+                </ng-container>
+    
+                <!-- University Column -->
+                <ng-container matColumnDef="name">
+                    <mat-header-cell *matHeaderCellDef class="col-header">
+                        University
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <a class="link" href="{{element.link}}" target="_blank" title="Visit to Know More">{{element.name}}</a>
+                    </mat-cell>
+                </ng-container>
+    
+                 <!-- Location Column -->
+                 <ng-container matColumnDef="location">
+                    <mat-header-cell *matHeaderCellDef class="col-header">
+                        Location
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">{{element.location}}</mat-cell>
+                </ng-container>
+
+                <!-- Marks Column -->
+                <ng-container matColumnDef="average">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef class="col-header">
+                        Marks
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">{{element.average}}%</mat-cell>
+                </ng-container>
+    
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+        </mat-card-content>
+    </mat-card>
+    <!-- <app-footer class="footer"></app-footer> -->
+
+</section>

@@ -1,0 +1,32 @@
+<header>
+    <mat-tab-group [backgroundColor]="background" mat-align-tabs="center" animationDuration="2000ms">
+        <mat-tab label="About">
+            <app-introduction></app-introduction>
+        </mat-tab>
+        <mat-tab label="Education">
+            <app-education></app-education>
+        </mat-tab>
+        <mat-tab label="Experience">
+            <app-experience></app-experience>
+        </mat-tab>
+        <mat-tab label="Skills">
+            <app-skills></app-skills>
+        </mat-tab>
+        <mat-tab label="Projects">
+            <app-projects></app-projects>
+        </mat-tab>
+        <mat-tab label="Contacts">
+            <app-contact></app-contact>
+        </mat-tab>
+    </mat-tab-group>
+    <!-- <nav mat-tab-nav-bar>
+        <a mat-tab-link
+        *ngFor="let link of navLinks"
+        [routerLink]="link.link"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+       {{link.label}}
+      </a>
+      </nav>
+      <router-outlet></router-outlet> -->
+</header>

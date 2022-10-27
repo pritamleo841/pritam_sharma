@@ -1,0 +1,5 @@
+.col-header{
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-weight: 600;
+}

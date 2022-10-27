@@ -1,0 +1,54 @@
+<section class="width100">
+    
+    <mat-card class="height-1" fxLayoutGap="1rem" fxLayout="column" fxLayoutAlign="start start">
+        <div class="margin-1"></div>
+        <mat-card-title>
+            <span class="title-special">
+                {{title}}
+            </span>
+        </mat-card-title>
+        <div class="margin-2"></div>
+        <mat-card-content>
+            <div fxFlex="50" fxLayout="column wrap" fxLayoutAlign="center start"  class="text">
+                <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="0.5rem">
+                    <article class="firstline">{{this.fullName + this.personalInfo.aboutMe}}</article>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="0.5rem">
+                    <article>
+                        <span class="bolder">Date of Birth : </span>
+                        {{this.dob}}
+                    </article>
+                <article>
+                    <span class="bolder">Interests : </span>
+                    <span *ngFor="let item of this.personalInfo.interests;let last=last">
+                        <span *ngIf="!last">{{item}},</span>
+                        <span *ngIf="last">{{item}}.</span>
+                    </span>
+                </article>
+                <article>
+                    <span class="bolder">Languages Spoken : </span>
+                    <span *ngFor="let item of this.personalInfo.languages;let last=last">
+                        <span *ngIf="!last">{{item}},</span>
+                        <span *ngIf="last">{{item}}.</span>
+                    </span>
+                </article>
+                <article>
+                    <span class="bolder">Hobbies : </span>
+                    <span *ngFor="let item of this.personalInfo.hobbies;let last=last">
+                        <span *ngIf="!last">{{item}},</span>
+                        <span *ngIf="last">{{item}}.</span>
+                    </span>
+                </article>
+                </div>
+                
+            </div>
+            <div fxFlex fxLayout="column wrap" fxLayoutAlign="start center">
+                    <div fxFlex="20"></div>
+                    <img class="image" src="assets/image11.png" height="200" width="200">
+            </div>
+        </mat-card-content>
+        
+    </mat-card>
+    <!-- <app-footer class="footer"></app-footer> -->
+
+</section>

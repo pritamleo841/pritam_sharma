@@ -1,0 +1,41 @@
+<section class="width100">
+  <mat-card class="height-1" fxLayout="column" fxLayoutGap="1rem" fxLayoutAlign="start start">
+    <div class="margin-1"></div>
+    <mat-card-title>
+      <span class="title-special">
+        {{title}}
+      </span>
+    </mat-card-title>
+    <div class="margin-2"></div>
+    <mat-card-content class="width100" *ngFor="let item of this.projects">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header class="panel-header">
+            <mat-panel-title>
+              <span class="bolder white-1">{{item.name}}</span>
+            </mat-panel-title>
+            <mat-panel-description>
+              <span class="bolder white-1">{{this.months[item.month]}},{{item.year}}</span>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p><span class="bolder">Description : </span>{{item.description}}</p>
+          <p><span class="bolder">Tech/Tool : </span><span *ngFor="let i of item.technologyUsed;let last=last">
+            <span *ngIf="!last">{{i}},</span>
+            <span *ngIf="last">{{i}}.</span>
+          </span></p>
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <p>
+              <a href="{{item.githubLink}}" target="_blank" rel="tooltip" title="Github Link"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </p>
+            <p *ngIf="item.hostLink!='NA'">
+              <a href="{{item.hostLink}}" target="_blank" rel="tooltip" title="Hosted Link">	<mat-icon>code</mat-icon></a>
+            </p>
+          </div>
+        </mat-expansion-panel>
+       
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+  <!-- <app-footer class="footer"></app-footer> -->
+
+</section>

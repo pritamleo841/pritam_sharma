@@ -1,1 +1,123 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Trochut:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+:root {
+  /* color variables */
+  --primary-color: #673ab7;
+  --secondary-color: #121212;
+  --accent-color: #d2c7e7;
+  --primary-text-color: #353636;
+  --secondary-text-color: "";
+  --white-color: #ffffff;
+  --font-family: "Poppins", sans-serif;
+  --danger-color: #be1818;
+
+  /* Font sizes */
+  font-size: 14px;
+}
+a {
+  color: var(--primary-text-color);
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7fbfc;
+}
+
+.width100 {
+  width: 100%;
+}
+.pointer {
+  cursor: pointer !important;
+}
+.test-border1 {
+  border: 2px solid red;
+}
+.test-border2 {
+  border: 2px solid orange;
+}
+.test-border3 {
+  border: 2px solid blue;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.height-1 {
+  min-height: 100vh;
+  /* height: auto;
+    overflow: scroll; */
+}
+.margin-1 {
+  margin-top: 2rem;
+}
+.margin-2 {
+  margin-bottom: 2rem;
+}
+
+.width75 {
+  width: 75%;
+}
+.font-s {
+  font-size: 1.5rem;
+}
+.link{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+a:hover{
+  color: var(--primary-color);
+}
+.title-special {
+  /* font-family: 'Trochut', cursive; */
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+}
+.title-special1 {
+  font-family: "Black Ops One", cursive;
+  font-size: 4rem;
+}
+.bolder {
+  font-weight: 550;
+}
+.fa {
+  padding: 1rem;
+  font-size: 2rem;
+  width: 4rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.mat-cell {
+  padding: 0.3rem 1rem 0.3rem;
+}
+
+.white-1 {
+  color: var(--accent-color);
+}
+.mat-expansion-indicator,
+.mat-expansion-indicator:after {
+  color: var(--accent-color);
+}
+
+.mat-expansion-panel-header:hover,.mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+  background:var(--primary-color);
+  color: var(--accent-color);
+}
+.mat-card, .mat-table , .mat-expansion-panel {
+  background-color: #e0d4f0e7;
+  /* background-image: url('../src/assets/bac2.jpg'); */
+}
+
