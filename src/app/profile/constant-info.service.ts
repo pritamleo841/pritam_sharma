@@ -263,7 +263,7 @@ export class ConstantInfoService {
       technologyUsed: ['Angular', 'Typescript', 'Angular Material','Font Awesome Library','Google Fonts Library'],
       year: 2022,
       month: 10,
-      githubLink:"NA",
+      githubLink:"https://github.com/pritamleo841/portfolio_1",
       hostLink:"NA"
     }
   ];
