@@ -117,7 +117,7 @@ a:hover{
   color: var(--accent-color);
 }
 .mat-card, .mat-table , .mat-expansion-panel {
-  background-color: #e0d4f0e7;
+  background-color: #f9f8fbe7;
   /* background-image: url('../src/assets/bac2.jpg'); */
 }
 
