@@ -1,9 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
 :root {
   /* color variables */
   --primary-color: #673ab7;
@@ -12,7 +10,7 @@
   --primary-text-color: #353636;
   --secondary-text-color: "";
   --white-color: #ffffff;
-  --font-family: "Poppins", sans-serif;
+  --font-family: 'Chakra Petch', sans-serif;
   --danger-color: #be1818;
 
   /* Font sizes */
@@ -31,7 +29,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   background-color: #f7fbfc;
 }
 .title-special1 {
@@ -40,7 +38,7 @@ body {
 }
 .title-special{
   /* font-family: 'Trochut', cursive; */
-  font-family: 'Cherry Swash', cursive;
+  font-family: 'Merriweather', serif;
   /* font-size: 3rem; */
   font-size: 1rem;
 }
@@ -92,7 +90,7 @@ a:hover{
 }
 
 .bolder {
-  font-weight: 550;
+  font-weight: 600 !important;
 }
 .fa {
   padding: 1rem;
@@ -123,23 +121,4 @@ a:hover{
   /* background-image: url('../src/assets/bac2.jpg'); */
 }
 
-.ml10 {
-  position: relative;
-  font-weight: 900;
-  font-size: 4em;
-}
 
-.ml10 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.ml10 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
-}
