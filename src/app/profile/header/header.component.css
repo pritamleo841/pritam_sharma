@@ -9,5 +9,6 @@
 }
 /* active tab */
 ::ng-deep .mat-tab-label .mat-tab-label-content{
-    font-family: "Orbitron", sans-serif;
+    font-family: 'Cherry Swash', cursive;
+    font-size: 1.4rem;
 }

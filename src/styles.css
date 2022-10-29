@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url("https://fonts.googleapis.com/css2?family=Trochut:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap');
+
+
 
 :root {
   /* color variables */
@@ -21,7 +22,7 @@ a {
   color: var(--primary-text-color);
 }
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
 }
 
 html,
@@ -33,7 +34,16 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f7fbfc;
 }
-
+.title-special1 {
+  font-family: "Black Ops One", cursive;
+  font-size: 4rem;
+}
+.title-special{
+  /* font-family: 'Trochut', cursive; */
+  font-family: 'Cherry Swash', cursive;
+  /* font-size: 3rem; */
+  font-size: 1rem;
+}
 .width100 {
   width: 100%;
 }
@@ -80,15 +90,7 @@ body {
 a:hover{
   color: var(--primary-color);
 }
-.title-special {
-  /* font-family: 'Trochut', cursive; */
-  font-family: "Orbitron", sans-serif;
-  font-size: 3rem;
-}
-.title-special1 {
-  font-family: "Black Ops One", cursive;
-  font-size: 4rem;
-}
+
 .bolder {
   font-weight: 550;
 }
